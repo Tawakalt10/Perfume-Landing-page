@@ -1,31 +1,51 @@
-import React from 'react'
+// import React from 'react'
 import products from './data/product'
+import {FaLeaf, FaTruck, FaStar} from "react-icons/fa"
 
 const ProductCard = () => {
   return (
     <div>
         <div className='product-section'>
-         <div>
-            
-        <div>
-          <h4>Natural Ingredients</h4>
-          <p>Sustainably sourced</p>
+          <div className="product-spec-wrapper">
+         <div className='product-info'>
+            <FaLeaf  className="product-spec-icon" />
+        <div className='product-spec'>
+          <h4 className='product-spec-heading'>Natural Ingredients</h4>
+          <p className='product-spec-para'>Sustainably sourced</p>
         </div>
       </div>
 
+      <div className='product-info'>
+            <FaStar className="product-spec-icon" />
+        <div className='product-spec'>
+          <h4 className='product-spec-heading' >Crafted in Grasse</h4>
+          <p className='product-spec-para'>By master Perfumers</p>
+        </div>
+      </div>
 
-      <h5>The Collection</h5>
-      <h4>Signature </h4>
+      <div className='product-info'>
+            <FaTruck  className="product-spec-icon" />
+        <div className='product-spec'>
+          <h4 className='product-spec-heading'>Complimentary Shipping</h4>
+          <p className='product-spec-para'>On Orders over $120</p>
+        </div>
+      </div>
+     </div>
+  
+      <h5 className='product-heading'>The Collection</h5>
+      <h4 className='product-para'>Signature </h4>
       <div className="product-card-wrapper">
-        <div className="product-card">
-            <img  src={products.image}
-            alt={products.name}
+        {products.map((product)=> (
+        <div className="product-card" key={product.id}>
+            <img  src={product.image}
+            alt={product.name}
             className='product-img'/>
 
-            <h3 className='product-name'>{products.name}</h3>
-            <h3 className='product-description'> {products.description}</h3>
+            <h3 className='product-name'>{product.name}</h3>
+            <h3 className='product-description'> {product.description}</h3>
             
         </div>
+        ))}
       </div>
         </div>
     </div>

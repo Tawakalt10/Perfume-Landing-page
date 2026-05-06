@@ -184,6 +184,45 @@
 
 /* Product featuures section */
 
+.product-spec-wrapper{
+    display: flex;
+    height:6rem;
+    background-color : #FDFBF8;
+    
+}
+.product-info{
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    width: 33.2%;
+    border: .2px solid #a59b97;
+}
+.product-spec-icon{
+    color:#DB9152;
+    margin-right:1rem ;
+    font-size: 1.3rem;
+}
+
+
+.product-spec-para{
+    color:#452C23;
+    font-size: .8rem;
+    margin-bottom: 2rem;
+}
+
+.product-heading{
+    
+}
+
+
+
+
+/* Testimonials */
+
+
+/* Footer */
+
+
 
 
 /* Responsive designs */
