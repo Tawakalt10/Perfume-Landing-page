@@ -1,0 +1,299 @@
+.navbar{
+    height: 10vh;
+    line-height: 10vh ;
+    /* background-color:#C9A36A; */
+    transition: ease 1s color ; 
+
+   
+}
+
+.nav-container{
+    display: flex;
+    justify-content: space-around;
+    align-items:center;
+}
+
+.navbar-links{
+    display: flex;
+    /* justify-content: space-between; */
+  
+  
+}
+
+.nav-link {
+      list-style-type: none;
+}
+
+.nav-link a  {
+    font-weight: 500;
+    margin-left: 2rem;
+    color :var(--text-color);
+    text-decoration-line: none;
+    
+
+}
+
+.nav-link a:hover{
+  color : #C9A36A;
+  transition: 1s color;
+}
+
+.navbar-brand{
+    font-weight: 400;
+    letter-spacing: .8cap;
+    line-height: 1.2cm;
+}
+
+.navbar-icons{
+    display: flex;
+    
+}
+
+.navbar-icons li {
+    list-style-type: none;
+    margin-left:2rem ;
+}
+
+.navbar-icons li:hover{
+  color : #C9A36A;
+  transition: 1s color;
+}
+
+.menu-icon{
+    display: none;
+}
+.scrolled{
+   position: fixed;
+   top:0;
+   width: 100%;
+   background-color:white;
+   transition: ease 1s color ; 
+}
+
+
+
+@media screen and (max-width : 800px) {
+   
+ .navbar-links{
+    display: none;
+ }
+
+
+ .navbar-links-mobile{
+    position: absolute;
+    display: block;
+    background-color: #FDFAF5;
+    left: 0; 
+    top: 10%; 
+    width: 100%;
+    height: 40vh;
+    
+ }
+
+ .menu-icon{
+    position: absolute;
+    display: block;
+    left: 20px;
+     transition: all 0.5s ease-in-out; 
+     margin-top: 1.2rem;
+     border: none;
+     /* color: var(--text-color); */
+     background-color: var(--bg-color) ;
+   
+     
+ }
+     
+}
+/* what i need to add, when i click my menu the background color should change to cream too */
+
+/* Hero Section */
+
+.hero-section{
+    display: flex;
+    margin-top:3rem; 
+}
+
+.hero-details{
+    padding: 2rem 3rem;
+    margin: 2rem;
+    margin-left: 5rem;
+}
+
+.hero-brandname{
+    font-weight: 400;
+    letter-spacing: .5rem ;
+    text-transform: uppercase;
+    color: var(--text-color);
+    font-size:12px;
+}
+
+.hero-heading{
+    line-height: 1.4;
+    font-size: 39px;
+    font-weight: 500;
+    text-transform: capitalize;
+    letter-spacing:1.3px;
+    
+}
+.hero-para{
+    color:var(--text-color);
+    font-size: 1.1rem;
+    letter-spacing: 1.2px;
+}
+
+.hero-btn-1{
+    margin-right: 2rem;
+    background-color:#452C23;
+    padding: .8rem;
+    color:#fff;
+    border:none;
+    width: 13rem;
+
+}
+
+.hero-btn-1:hover{
+    background-color:#543225;
+    transition: ease;
+}
+
+.hero-btn-2{
+    padding: .8rem;
+    background-color: var(--bg-color);
+    color: #452C23;
+    border:none;
+    width: 6rem;
+    
+
+}
+
+.hero-btn-2:hover{
+    background-color:#DB9152;
+    color:#452C23;
+    transition: ease;
+}
+
+.hero-heading span{
+    color:#DB9152;
+}
+
+.hero-img{
+    width: 70%;
+    height: 30rem;
+}
+
+
+/* Product featuures section */
+
+
+
+/* Responsive designs */
+
+@media screen and (max-width: 500px) {
+    .hero-section{
+        display: flex;
+        flex-direction:column;
+    }
+
+    .hero-details{
+        padding: 1rem;
+        margin: 1.2rem;
+    }
+
+    .hero-brandname{
+        line-height: 1;
+        letter-spacing: 1px;
+        font-size: .7rem;
+    }
+
+    .hero-heading{
+        font-size: 18px;
+    }
+
+    .hero-para{
+        font-size: .7rem;
+    }
+
+    .hero-buttons{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .hero-btn-1{
+        margin-top: .7rem;
+        width: 10rem;
+        margin-bottom: 1rem;
+    }
+
+    .hero-img{
+        padding: 1.2rem;
+        width: 80%;
+        height: 95vh;
+    }
+
+}
+
+@media screen and (max-width: 600px){
+     .hero-section{
+        display: flex;
+        flex-direction:column;
+    }
+
+    .hero-details{
+        padding: 1rem;
+        margin: 1.5rem;
+    }
+
+    .hero-brandname{
+        line-height: 1;
+        letter-spacing: 1px;
+        font-size: .7rem;
+    }
+
+    .hero-heading{
+        font-size: 18px;
+    }
+
+    .hero-para{
+        font-size: .7rem;
+    }
+
+    .hero-img{
+        padding: 1.5rem;
+        width: 80%;
+        height: 95vh;
+    }
+
+
+} 
+
+@media  screen and (max-width: 750px) {
+
+     .hero-details{
+        padding: 1rem;
+        margin: 1.2rem;
+    }
+
+    .hero-brandname{
+        line-height: 1.1;
+        letter-spacing: 1px;
+        font-size: .7rem;
+    }
+
+    .hero-heading{
+        font-size: 18px;
+    }
+
+    .hero-para{
+        font-size: .7rem;
+    }
+    .hero-img{
+        width: 70%;
+        height: 70vh;
+    }
+
+    .hero-btn-1{
+        margin-top: 1rem;
+        width: 10rem;
+    }
+}
+
