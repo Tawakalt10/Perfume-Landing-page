@@ -211,11 +211,21 @@
 }
 
 .product-heading{
-
+   font-weight: 400;
+    letter-spacing: .4rem ;
+    text-transform: uppercase;
+    color: var(--text-color);
+    font-size:17px;
+    margin-left: 3rem;
+    margin-top: 4rem;
 }
 
 .product-para{
-
+ font-weight: 700;
+ margin-left:3rem;
+ font-size:30px;
+ letter-spacing: 1.2px;
+ /* color:#543225; */
 }
 
 .product-card-wrapper{
@@ -257,6 +267,10 @@
      font-weight: 300;
      
     
+}
+
+.product-name{
+    font-style: ;
 }
 
 .product-description{

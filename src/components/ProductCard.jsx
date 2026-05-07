@@ -33,7 +33,7 @@ const ProductCard = () => {
      </div>
   
       <h5 className='product-heading'>The Collection</h5>
-      <h4 className='product-para'>Signature </h4>
+      <h4 className='product-para'>Signature fragnances </h4>
       <div className="product-card-wrapper">
         {products.map((product)=> (
         <div className="product-card" key={product.id}>
