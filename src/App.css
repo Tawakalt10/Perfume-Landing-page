@@ -211,10 +211,29 @@
 }
 
 .product-heading{
-    
+
 }
 
+.product-para{
 
+}
+
+.product-card-wrapper{
+  display: flex;
+  flex-wrap: wrap;
+   ;
+}
+
+.product-card{
+    padding: 1rem 1.3rem;
+    width: 30%;
+    
+}
+.product-img{
+    width: 90%;
+    height: 80%;
+    border-radius: .5rem;
+}
 
 
 /* Testimonials */
@@ -268,7 +287,24 @@
         width: 80%;
         height: 95vh;
     }
+  
 
+    /* Product section */
+
+    .product-spec-wrapper{
+    display: flex;
+    flex-direction: column;
+    /* height:6rem; */
+    background-color : #FDFBF8;
+    
+}
+.product-info{
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    width: 33.2%;
+    border: .2px solid #a59b97;
+}
 }
 
 @media screen and (max-width: 600px){
