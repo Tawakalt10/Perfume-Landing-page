@@ -270,7 +270,7 @@
 }
 
 .product-name{
-    font-style: ;
+    font-style: oblique;
 }
 
 .product-description{
@@ -285,6 +285,101 @@
 
 /* Testimonials */
 
+.testimonial-heading{
+ font-weight: 400;
+    letter-spacing: .4rem ;
+    text-transform: uppercase;
+    color: var(--text-color);
+    font-size:16px;
+    text-align: center;
+   
+}
+
+.testimonial-para{
+ margin-top: 1rem;
+   font-weight: 400;
+   font-size:30px;
+   color:#463C38;
+   letter-spacing: 1.2px;
+    text-align: center;
+}
+.testimonial-wrapper{
+    background-color:#FAF5ED;
+    
+}
+.testimonial-card{
+    margin: 2rem;
+    background-color:#Fdf8f8;
+    border: .1px dotted rgb(80, 70, 70);
+}
+
+.testimonial-icon{
+    color :#C9A36A;
+    font-size: 1.2rem;
+    padding: 2rem;
+    
+}
+
+.testimonial-info{
+  padding-left: 3rem;
+  padding-top: 1rem;
+}
+
+.testimonial-name{
+    
+     padding-left: 3rem;
+     color:#C9A36A;
+     padding-top: .4rem;
+     font-size: 1rem;
+     margin-bottom: .2rem;
+}
+.testimonial-country{
+    margin-top: -.1rem;
+     font-size: .8rem;
+     padding-left: 3rem;
+     color:#6D6059;
+     text-transform: uppercase;
+     font-weight: 300;
+     padding-bottom: 2rem;
+}
+
+/* Newsletter */
+ .newsletter-wrapper{
+    background-color:#FDFAF4;
+    padding: 3rem;
+ }
+.newsletter-heading{
+    text-align: center;
+    font-weight: 600;
+    line-height: 1.4px;
+    /* color: var(--text-color); */
+    font-size:25px;
+
+}
+
+.newsletter-para{
+    text-align: center;
+     color:var(--text-color);
+    font-size: 1.1rem;
+    letter-spacing: 1.2px;
+}
+.newsletter-input-wrapper{
+    text-align: center;
+    
+}
+
+.newsletter-input{
+    width: 12rem;
+    height: 5rem,;
+}
+
+
+.newsletter-button{
+   background-color:#452C23;
+   color:#fff;
+   padding-left:1rem ;
+   padding-right:1rem ;
+}
 
 /* Footer */
 

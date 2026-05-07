@@ -5,6 +5,7 @@ import Hero from './components/Hero';
 import Testimonials from './components/Testimonials';
 import Footer from './components/Footer';
 import ProductCard from './components/ProductCard';
+import Newsletter from './components/Newsletter';
 
 
 function App() {
@@ -13,6 +14,7 @@ function App() {
      <Hero/>
      <ProductCard/>
      <Testimonials/>
+     <Newsletter />
      <Footer/>
   </div>
   );
