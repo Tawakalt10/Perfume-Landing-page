@@ -369,19 +369,50 @@
 }
 
 .newsletter-input{
-    width: 12rem;
-    height: 5rem,;
+    width: 18rem;
+    height: 1rem;
+    padding: 1.2rem;
+    border: .2px solid var(--bg-color);
+    background-color:#FDFAF4;
 }
 
+
+input:focus {
+    outline: none;
+    border: 1px solid #C9A36A
+}
 
 .newsletter-button{
    background-color:#452C23;
    color:#fff;
-   padding-left:1rem ;
-   padding-right:1rem ;
+   margin-left: .6rem;
+   width: 8rem;
+   height: 2rem;
+   border:none;
+   cursor: pointer;
 }
 
+.newsletter-button:hover{
+    background-color:#543225
+}
+
+
+
 /* Footer */
+
+.footer-section{
+    background-color: #FDFBF8;
+}
+
+.footer-second-section,
+.footer-first-section {
+    display: flex;
+    /* justify-content: baseline; */
+    align-items: center;
+
+}
+
+
 
 
 
