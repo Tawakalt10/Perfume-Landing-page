@@ -6,7 +6,7 @@ const ProductCard = () => {
   return (
     <div>
         <div className='product-section'>
-          <div className="product-spec-wrapper">
+      <div className="product-wrapper">
          <div className='product-info'>
             <FaLeaf  className="product-spec-icon" />
         <div className='product-spec'>
