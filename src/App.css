@@ -62,12 +62,16 @@
 .menu-icon{
     display: none;
 }
-.scrolled{
-   position: fixed;
-   top:0;
-   width: 100%;
-   background-color:white;
-   transition: ease 1s color ; 
+
+
+.scrolled {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: white;
+  z-index: 1000;
+  transition: background-color 0.3s ease;
+  padding-bottom: 1.5rem;
 }
 
 
@@ -453,13 +457,14 @@ input:focus {
 }
 
 
-
-
-
-
-
-
 /* Responsive designs */
+
+@media screen and (min-width: 300px) and (max-width: 420px) {
+
+
+
+
+}
 
 @media screen and (max-width: 500px) {
     .hero-section{
@@ -515,15 +520,52 @@ input:focus {
     height:75vh;
      width: 100% ;
      background-color:#FDFBF8;
+     width: 90%;
    
     
 }
 .product-info{
      border-bottom: 1px solid #452C23 ;
-    width: 33.2%;
+    /* width: 33.2%; */
     /* border: .2px solid #a59b97; */
      border: none; 
 }
+
+.product-card-wrapper{
+  display: flex;
+  flex-wrap: wrap;
+  
+   
+}
+
+
+.product-card{
+    padding-right:0;
+    width: 45%;
+    padding-bottom: 1rem;
+    
+}
+.product-description{
+    padding-left: 1rem;
+    word-spacing: 2px;
+    font-weight: 400;
+    font-size: .9rem;
+    padding-bottom: 1rem;
+   
+    
+}
+
+
+.product-img{
+    width: 90%;
+    height: 80%;
+  margin-top: 1.5rem;
+
+}
+.testimonial-heading{
+    margin-top: 5rem;
+}
+
 }
 
 @media screen and (max-width: 600px){
@@ -589,5 +631,8 @@ input:focus {
         margin-top: 1rem;
         width: 10rem;
     }
+
+
+    /* PRODUCTS section */
 }
 

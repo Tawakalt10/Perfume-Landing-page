@@ -33,7 +33,7 @@ const Navbar = () => {
   return (
 
    
-    <nav className='navbar'>
+    <nav className={isScrolled ? "navbar scrolled" : "navbar"}>
      <div className='nav-container'>
         
          {/* <span className='close' onClick={toggleMenu}><FaTimes/></span>  */}
