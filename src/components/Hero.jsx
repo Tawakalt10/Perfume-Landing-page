@@ -18,9 +18,9 @@ const Hero = () => {
         <button className='hero-btn-2'> Our Story</button>
       </div>
       </div>
-      <div className="hero-img">
+      
         <img src="/images/img-2.jpg" alt="Mauren"  className='hero-img'/>
-      </div>
+      
     </div>
 
      

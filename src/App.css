@@ -183,6 +183,9 @@
 .hero-img{
     width: 70%;
     height: 30rem;
+    padding-right: 3rem;
+    margin-bottom: 3rem;
+    
 }
 
 
@@ -463,8 +466,9 @@ input:focus {
   
        .hero-img{
         padding: 1.2rem;
-       width: 90%;
-        height: 70vh
+       width: 30rem;
+       height: 10rem;
+        margin-bottom:2rem;
         
     }
  
@@ -476,9 +480,10 @@ input:focus {
 
     .product-wrapper{
    display: flex;
-   margin-top: 2rem;
+   margin-top: 2em;
    flex-direction: column;
-   height:40vh;
+   height:45vh;
+  
     }
 
 
@@ -492,7 +497,7 @@ input:focus {
 
 .product-card-wrapper{
     padding: 1rem 1rem;
-    width: 40rem;
+    max-width: 30rem;
     display: flex;
     flex-direction: column;
 
@@ -514,6 +519,9 @@ input:focus {
 
 }
 
+.newsletter-input{
+    width: 6rem;
+}
   
 }
 
