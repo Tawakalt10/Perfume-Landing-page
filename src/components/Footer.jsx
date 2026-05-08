@@ -16,9 +16,9 @@ const Footer = () => {
 
    <div>
    
-    <ul className='footer-list'>
+    <ul className='footer-list left '>
       <li className='footer-links heading'>Shop</li>
-      <li className='footer-links'>fragrances</li>
+      <li className='footer-links '>fragrances</li>
       <li className='footer-links'>Discovery set</li>
       <li className='footer-links'>Gifts</li>
     </ul>
@@ -36,7 +36,7 @@ const Footer = () => {
    </div>
 
    <div>
-    <ul className='footer-list'>
+    <ul className='footer-list '>
        <li className='footer-links heading'>Care</li>
       <li className='footer-links'>Contact</li>
       <li className='footer-links'>Shipping</li>
@@ -44,10 +44,11 @@ const Footer = () => {
     </ul>
    </div>
   </div>
+  
+    <p className='copyright'>  &copy;  2026 Maison Aurelle @TeeCodes. All right reserved </p>
+   
   </div>
 
-    <p className='copyright'>  &copy;  2026 Maison Aurelle.@TeeCodes. All right reserved </p>
-   
     </div>
   )
 }

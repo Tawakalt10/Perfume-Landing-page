@@ -407,10 +407,52 @@ input:focus {
 .footer-second-section,
 .footer-first-section {
     display: flex;
-    /* justify-content: baseline; */
+    justify-content: space-evenly; 
     align-items: center;
+   
 
 }
+ .footer-first-section{
+    margin-left: 2rem;
+}
+.footer-second-section{
+    margin-right:3rem ;
+} 
+.footer-brandname{
+    color: #543225;
+    padding: .2rem;
+    cursor: pointer;
+
+}
+
+.footer-links{
+    list-style-type: none ;
+    color: #543225;
+    padding: .2rem;
+    cursor: pointer;
+    font-size: .9rem;
+}
+
+.footer-links:hover,
+.footer-heading:hover,
+.footer-para:hover{
+    color: #DB9152;
+    
+}
+
+.copyright{
+    text-align: center;
+    padding: 2rem;
+    color:#452C23;
+    font-style: oblique;
+    word-spacing: 1px;
+}
+
+.left{
+    padding-right: 2rem;
+}
+
+
 
 
 
