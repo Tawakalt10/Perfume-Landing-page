@@ -195,8 +195,10 @@
 .product-info-wrapper{
     display: flex;
     height:6rem;
-    background-color : #FDFBF8;
+    background-color : #Fdf8f8;
     margin-top: 3rem;
+
+    border: .2px dotted #a59b97
     
 }
 .product-info{
@@ -204,7 +206,7 @@
     align-items:center;
     justify-content: center;
     width: 33.2%;
-    border: .2px dotted #a59b97; 
+    ; 
     
 }
 .product-spec-icon{
@@ -240,14 +242,19 @@
 
 .product-card-wrapper{
   display: flex;
+  flex-direction: row;
   flex-wrap: wrap;
-  width: 30%;
+  
    
 }
 
 .product-card{
     padding: 1rem 1.3rem;
-    width: ;
+    width: 100%;
+    width: 32%;
+  /* flex: 1 1 calc(33.333% - 1rem); */
+  box-sizing: border-box;
+  /* background-color:blue; */
 
     
 }
@@ -488,14 +495,6 @@ input:focus {
     }
  
 
-    /* .product-wrapper{
-   display: flex;
-   margin-top: 2rem;
-   
-  
-    } */
-
-
 .product-info{
     display: flex;
     align-items:center;
@@ -505,7 +504,7 @@ input:focus {
 }
 
 
-       .product-info-wrapper{
+  .product-info-wrapper{
     display: flex;
     flex-direction: column;
    padding-left: 2rem;
@@ -520,17 +519,24 @@ input:focus {
    
     
 }
+.product-card{
+    padding: 1rem 1.3rem;
+    width: 100%;
+  /* flex: 1 1 calc(33.333% - 1rem); */
+  box-sizing: border-box;
+  /* background-color:blue; */
+
+    
+}
 
   
-    .product-card-wrapper{
+    /* .product-card-wrapper{
     padding: 1rem;
     padding-left: 2rem;
     width: 90%;
     /* display: flex; */
     /* flex-direction: column; */
-    overflow: hidden;
-    
-}
+/* } */
 
 
 .product-img{
@@ -538,8 +544,6 @@ input:focus {
     max-width: 35rem;  
     height: auto;    
     border-radius: .5rem;
-    cursor: pointer;
-    object-fit: cover;
 }
 
 .product-img:hover{
@@ -556,7 +560,7 @@ input:focus {
   
 }
 
-@media screen and (min-width:400px){
+@media screen and (min-width:400px) and (max-width:450px){
   
   .navbar-brand{
     letter-spacing: 1px;
@@ -569,19 +573,11 @@ input:focus {
 }
   
     .product-info-wrapper{
-    display: flex;
     flex-direction: column;
-   padding-left: 2rem;
-   padding-right: 2rem;
-    margin-top: 3rem;
-    /* margin-bottom: 3rem; */
     background-color: var(--bg-color);
     height:auto;
      width: 90% ;
-     background-color:#FDFBF8;
-     width: 90%;
-   
-    
+     
 }
 
   
@@ -592,6 +588,17 @@ input:focus {
     /* display: flex; */
     /* flex-direction: column; */
     overflow: hidden;
+
+    }
+
+    .product-card{
+    padding: 1rem 1.3rem;
+    width: 100%;
+    overflow: hidden;
+
+
+    
+}
     
 }
 
@@ -650,8 +657,6 @@ input:focus {
         height: 95vh;
     }
   
-
-    /* Product section */
 
     .product-spec-wrapper{
     display: flex;
