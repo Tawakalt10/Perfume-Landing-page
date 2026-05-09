@@ -70,7 +70,7 @@
   width: 100%;
   background-color: white;
   z-index: 1000;
-  transition: background-color 0.3s ease;
+  transition:  0.3s ease;
   padding-bottom: 1.5rem;
 }
 
@@ -98,8 +98,8 @@
     position: absolute;
     display: block;
     left: 20px;
-     transition: all 0.5s ease-in-out; 
-     margin-top: 1.2rem;
+    transition: all 0.5s ease-in-out; 
+     margin-top: 2.1rem;
      border: none;
      /* color: var(--text-color); */
      background-color: var(--bg-color) ;
@@ -129,6 +129,7 @@
     text-transform: uppercase;
     color: var(--text-color);
     font-size:12px;
+    margin-top: 2rem;
 }
 
 .hero-heading{
@@ -184,17 +185,18 @@
     width: 70%;
     height: 30rem;
     padding-right: 3rem;
-    margin-bottom: 3rem;
+    margin-top: 4rem;
     
 }
 
 
 /* Product featuures section */
 
-.product-wrapper{
+.product-info-wrapper{
     display: flex;
     height:6rem;
     background-color : #FDFBF8;
+    margin-top: 3rem;
     
 }
 .product-info{
@@ -202,7 +204,8 @@
     align-items:center;
     justify-content: center;
     width: 33.2%;
-    border: .2px solid #a59b97;
+    border: .2px dotted #a59b97; 
+    
 }
 .product-spec-icon{
     color:#DB9152;
@@ -238,12 +241,13 @@
 .product-card-wrapper{
   display: flex;
   flex-wrap: wrap;
-   ;
+  width: 30%;
+   
 }
 
 .product-card{
     padding: 1rem 1.3rem;
-    width: 30%;
+    width: ;
 
     
 }
@@ -462,29 +466,34 @@ input:focus {
 
 /* Responsive designs */
 
-@media screen and (min-width: 320px) and (max-width: 420px) {
-  
+
+
+@media screen and (min-width: 300px) and (max-width: 400px) {
+    .navbar-brand{
+    letter-spacing: 1px;
+    line-height: 1.2cm;
+    margin-left: 2rem;
+}
+
+.hero-section{
+    margin-top: -1rem;
+}
        .hero-img{
         padding: 1.2rem;
-       width: 30rem;
+        width: 100%;
+       max-width: 30rem;
        height: 10rem;
         margin-bottom:2rem;
         
     }
  
-    /* .product-spec-wrapper{
-    display: flex;
-    height: 20rem;
-    background-color:blue;
-    } */
 
-    .product-wrapper{
+    /* .product-wrapper{
    display: flex;
-   margin-top: 2em;
-   flex-direction: column;
-   height:45vh;
+   margin-top: 2rem;
+   
   
-    }
+    } */
 
 
 .product-info{
@@ -495,20 +504,42 @@ input:focus {
    
 }
 
-.product-card-wrapper{
-    padding: 1rem 1rem;
-    max-width: 30rem;
+
+       .product-info-wrapper{
     display: flex;
     flex-direction: column;
-
-
+   padding-left: 2rem;
+   padding-right: 2rem;
+    margin-top: 3rem;
+    /* margin-bottom: 3rem; */
+    background-color: var(--bg-color);
+    height:auto;
+     width: 90% ;
+     background-color:#FDFBF8;
+     width: 90%;
+   
     
 }
+
+  
+    .product-card-wrapper{
+    padding: 1rem;
+    padding-left: 2rem;
+    width: 90%;
+    /* display: flex; */
+    /* flex-direction: column; */
+    overflow: hidden;
+    
+}
+
+
 .product-img{
-    width: 100%;
-    height: 80%;
+    width: 100%;    
+    max-width: 35rem;  
+    height: auto;    
     border-radius: .5rem;
     cursor: pointer;
+    object-fit: cover;
 }
 
 .product-img:hover{
@@ -523,6 +554,57 @@ input:focus {
     width: 6rem;
 }
   
+}
+
+@media screen and (min-width:400px){
+  
+  .navbar-brand{
+    letter-spacing: 1px;
+    line-height: 1.2cm;
+    margin-left: 2rem;
+} 
+
+.hero-section{
+    margin-top: -1.5rem;
+}
+  
+    .product-info-wrapper{
+    display: flex;
+    flex-direction: column;
+   padding-left: 2rem;
+   padding-right: 2rem;
+    margin-top: 3rem;
+    /* margin-bottom: 3rem; */
+    background-color: var(--bg-color);
+    height:auto;
+     width: 90% ;
+     background-color:#FDFBF8;
+     width: 90%;
+   
+    
+}
+
+  
+    .product-card-wrapper{
+    padding: 1rem;
+    padding-left: 2rem;
+    width: 90%;
+    /* display: flex; */
+    /* flex-direction: column; */
+    overflow: hidden;
+    
+}
+
+
+.product-img{
+    width: 100%;    
+    max-width: 35rem;  
+    height: auto;    
+    border-radius: .5rem;
+    cursor: pointer;
+    object-fit: cover;
+}
+
 }
 
 
@@ -593,7 +675,7 @@ input:focus {
 
 .product-card-wrapper{
   display: flex;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
   
    
 }
@@ -601,7 +683,7 @@ input:focus {
 
 .product-card{
     padding-right:0;
-    width: 45%;
+    width: 100%;
     padding-bottom: 1rem;
     
 }
