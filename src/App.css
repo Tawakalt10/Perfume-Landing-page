@@ -68,10 +68,12 @@
   position: fixed;
   top: 0;
   width: 100%;
+  height: 1.9rem;
   background-color: white;
   z-index: 1000;
   transition:  0.3s ease;
-  padding-bottom: 1.5rem;
+  padding-bottom: 2.5rem;
+  
 }
 
 
@@ -476,7 +478,7 @@ input:focus {
 
 
 
-@media screen and (min-width: 300px) and (max-width: 400px) {
+@media screen and (min-width: 300px) and (max-width: 440px) {
     .navbar-brand{
     letter-spacing: 1px;
     line-height: 1.2cm;
@@ -489,12 +491,24 @@ input:focus {
        .hero-img{
         padding: 1.2rem;
         width: 100%;
-       max-width: 30rem;
-       height: 15rem;
-        margin-bottom:2rem;
+       width: 20rem;
+       height: auto;
+    margin-bottom:2rem;
+    
         
     }
- 
+    .menu-icon{
+        margin-top: .3rem;
+       
+    }
+    .navbar-links-mobile{
+        padding: 2rem;
+        
+    }
+
+    .nav-link{
+        margin-bottom: 1rem;
+    }
 
 .product-info{
     display: flex;
@@ -529,14 +543,7 @@ input:focus {
     
 }
 
-  
-    /* .product-card-wrapper{
-    padding: 1rem;
-    padding-left: 2rem;
-    width: 90%;
-    /* display: flex; */
-    /* flex-direction: column; */
-/* } */
+
 
 
 .product-img{
@@ -560,7 +567,7 @@ input:focus {
   
 }
 
-@media screen and (min-width:400px) and (max-width:550px){
+@media screen and (min-width:440px) and (max-width:550px){
   
   .navbar-brand{
     letter-spacing: 1px;
@@ -613,7 +620,7 @@ input:focus {
 }
 .hero-img{
     width: 70%;
-    height: 25rem;
+    height: auto;
     padding-right: 3rem;
     margin-top: 4rem;
     
@@ -796,7 +803,7 @@ input:focus {
     }
     .hero-img{
         width: 70%;
-        height: 40vh;
+        height: auto;
     }
 
     .hero-btn-1{
