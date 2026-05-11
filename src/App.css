@@ -575,6 +575,11 @@ input:focus {
     margin-left: 2rem;
 } 
 
+  .menu-icon{
+        margin-top: .3rem;
+       
+    }
+
 .hero-section{
     margin-top: -1.5rem;
 }
@@ -641,6 +646,11 @@ input:focus {
     .hero-section{
         display: flex;
         flex-direction:column;
+    }
+
+      .menu-icon{
+        margin-top: .3rem;
+       
     }
 
     .hero-details{
@@ -754,6 +764,11 @@ input:focus {
     .hero-details{
         padding: 1rem;
         margin: 1.5rem;
+    }
+
+      .menu-icon{
+        margin-top: .3rem;
+       
     }
 
     .hero-brandname{
