@@ -1,4 +1,8 @@
-const testimonials = [
+const testimonialdata = {
+      heading: "Praise",
+  paragraph: "Words from the wearers",
+
+ testimonialsdetails :  [
     
     {
     id: 1,
@@ -34,5 +38,5 @@ const testimonials = [
 
     }
 ]
-
-export default testimonials
+}
+export default testimonialdata

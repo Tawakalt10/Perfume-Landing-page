@@ -1,33 +1,53 @@
-import React from 'react'
+import React from 'react';
+import Heading from './Heading';
+import Button from './Button';
 
-const Hero = () => {
+
+const Hero = ({
+  brandName,
+  heading,
+  description,
+  image,
+  buttonOne,
+  buttonTwo
+}) => {
   return (
     <div className='hero-section'>
-      <div className="hero-details">
-      <h4 className='hero-brandname'>Maison Aurelle . EST . 1924</h4>
-      <h3 className='hero-heading'> The art of <span>Scent,</span> <br />
-      bottled with <br /> intention.
-      </h3>
+      <div className='hero-details'>
 
-      <p className='hero-para'> Hand-crafted niche fragrances from Grasse, France. Rare ingredients,
-        single-origin sourcing, external silhouettes.
-      </p>
+        <h4 className='hero-brandname'>
+          {brandName}
+        </h4>
 
-      <div className="hero-buttons">
-        <button className="hero-btn-1">Discover with the collection</button>
-        <button className='hero-btn-2'> Our Story</button>
+         <Heading
+                title={heading}
+                className='hero-heading'
+              />
+
+        <p className='hero-para'>
+          {description}
+        </p>
+
+        <div className='hero-buttons'>
+        <Button
+          text={buttonOne}
+          className='hero-btn-1'
+        />
+          <Button
+          text={buttonTwo}
+          className='hero-btn-2'
+        />
+
+         
+        </div>
       </div>
-      </div>
-      
-        <img src="/images/img-2.jpg" alt="Mauren"  className='hero-img'/>
-      
+
+      <img
+        src={image}
+        alt={heading}
+        className='hero-img'
+      />
     </div>
-
-     
-
-    
-
-
   )
 }
 

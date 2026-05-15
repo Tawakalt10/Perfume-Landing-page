@@ -1,17 +1,30 @@
 import React from 'react'
+import Button from './Button'
+import Heading from './Heading'
 
-const Newsletter = () => {
+const Newsletter = ({
+  heading,
+  paragraph,
+  buttonText
+}) => {
   return (
     <div className='newsletter-wrapper'>
-        <h4 className='newsletter-heading'>Join the maison</h4>
-        <p className='newsletter-para'>Private previews, atelier stories, and a welcome scent sample with your first order.</p>
-   
+       <Heading
+        title={heading}
+        className='newsletter-heading'
+      />
+       <p className='newsletter-para'>
+        {paragraph}
+      </p>
      <div className='newsletter-input-wrapper'>
       <input type="email" placeholder='Your email' 
       name="" id="email"
       className='newsletter-input'
       required/>
-     <button className='newsletter-button'> Subscribe</button>
+      <Button
+          text={buttonText}
+          className='newsletter-button'
+        />
      </div>
    
     </div>

@@ -1,7 +1,8 @@
 import { useState, useEffect } from 'react';
+import navLinks from './data/nav';
 import { FaSearch, FaShoppingCart, FaTimes, FaBars } from "react-icons/fa";
 
-const Navbar = () => {
+const Navbar = ({brand, links}) => {
   const [isScrolled, setIsScrolled] = useState(false)
   const [isMenuOpen, setIsMenuOpen] = useState(false)
 
@@ -22,11 +23,7 @@ const Navbar = () => {
      }, []);
    
 
-    //  function toggleMenu (){
-    //     setIsMenuOpen(prev => !prev);
- 
-    //  }
-
+   
 
     
 
@@ -35,15 +32,18 @@ const Navbar = () => {
    
     <nav className={isScrolled ? "navbar scrolled" : "navbar"}>
      <div className='nav-container'>
-        
-         {/* <span className='close' onClick={toggleMenu}><FaTimes/></span>  */}
+
       <ul className= {
-         isMenuOpen ? "navbar-links-mobile" : "navbar-links"} onClick={() =>setIsMenuOpen(false)}>
-        <li  className='nav-link'> <a href="#">Shop</a></li>
-        <li  className='nav-link'> <a href="#">Story</a></li>
-        <li  className='nav-link' > <a href="#">Journal</a></li>
+          isMenuOpen ? "navbar-links-mobile" : "navbar-links"} onClick={() =>setIsMenuOpen(false)}>
+              {links.map((link, index) => (
+                <li key={index} className='nav-link'>
+                  <a href={link.path}>
+                    {link.name}
+                  </a>
+                </li>
+              ))}
       </ul>
-        <h4 className ="navbar-brand"> AURELLE </h4>
+        <h4 className ="navbar-brand"> {brand} </h4>
         <div className="navbar-icons">
           <li> <FaShoppingCart/></li>
           <li ><FaSearch/></li>
